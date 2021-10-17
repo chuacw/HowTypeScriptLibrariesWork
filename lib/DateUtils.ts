@@ -37,10 +37,6 @@ Date.prototype.day = function (): TDay {
 function JSDateAddDays(time: Date, days: number) {
     let daysInMins = days * 24 * 60;
     JSDateAddMins(time, daysInMins);
-    // let daysInMS = days * 24 * 60 * 60 * 1000;
-    // let result = new Date(timestamp + daysInMS);
-    // time.setTime(result.getTime()); // update the reference
-    // return result;
 }
 
 function JSDateAddMins(time: Date, mins: number) {
